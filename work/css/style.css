@@ -50,3 +50,8 @@ li {
   color: #545658;
   border: 1px solid #d9d9d9;
 }
+
+.form-label {
+  font-size: 14px;
+  color: #464646;
+}
