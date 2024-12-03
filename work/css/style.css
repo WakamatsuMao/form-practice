@@ -79,3 +79,8 @@ li {
     color: #0170bf;
   }
 }
+
+.form-notice {
+  font-size: 10px;
+  margin-top: 25px;
+}
