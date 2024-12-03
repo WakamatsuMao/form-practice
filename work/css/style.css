@@ -84,3 +84,8 @@ li {
   font-size: 10px;
   margin-top: 25px;
 }
+
+.link-text {
+  color: #0170bf;
+  text-decoration: none;
+}
