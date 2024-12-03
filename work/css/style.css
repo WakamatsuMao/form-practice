@@ -13,4 +13,25 @@ body {
 
 form {
   background-color: #ecfaff;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+  margin-block: 60px;
+}
+
+h2 {
+  font-size: 24px;
+  text-align: center;
+}
+
+fieldset {
+  margin-top: 50px;
+}
+
+legend {
+  font-size: 18px;
+  color: #000000;
 }
