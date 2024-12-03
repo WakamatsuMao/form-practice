@@ -1,3 +1,16 @@
 @charset "UTF-8";
 
 /* work */
+
+body {
+  background-color: #cff1ff;
+}
+
+.wrapper {
+  margin-inline: auto;
+  width: 600px;
+}
+
+form {
+  background-color: #ecfaff;
+}
