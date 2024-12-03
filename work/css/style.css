@@ -39,3 +39,14 @@ legend {
 li {
   margin-top: 25px;
 }
+
+.form-textfield {
+  box-sizing: border-box;
+  width: 100%;
+  height: 35px;
+  margin-top: 6px;
+  padding: 5px;
+  background-color: #fbfbfb;
+  color: #545658;
+  border: 1px solid #d9d9d9;
+}
