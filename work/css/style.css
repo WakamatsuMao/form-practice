@@ -57,6 +57,11 @@ li {
   color: #464646;
 }
 
+.form-gender-label {
+  font-size: 16px;
+  color: #545658;
+}
+
 .required-marker {
   color: #e40000;
   margin-left: 5px;
