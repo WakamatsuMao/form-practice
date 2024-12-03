@@ -57,6 +57,11 @@ li {
   color: #464646;
 }
 
+.required-marker {
+  color: #e40000;
+  margin-left: 5px;
+}
+
 .form-submit-button {
   /* サイズ・間隔 */
   box-sizing: border-box;
