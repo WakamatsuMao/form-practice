@@ -1,13 +1,144 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/base.css" />
-    <title>form-practice</title>
-  </head>
-  <body>
-    <!-- この行は削除してください -->
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>form-practice</title>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>登録用フォーム</h1>
+    <form action="">
+      <h2>アカウント作成</h2>
+      <fieldset>
+        <legend>個人情報</legend>
+        <ul>
+          <li><label for="first-name">名字<span class="required">※</span></label>
+            <input type="text" name="first-name" id="first-name" required>
+          </li>
+          <li> <label for="second-name">名前<span class="required">※</span></label>
+            <input type="text" name="second-name" id="second-name" required>
+          </li>
+          <li>
+            <label for="birth-year">生年月日<span class="required">※</span></label>
+            <select name="birth-year" id="birth-year" required>
+              <option value="2000">2000</option>
+              <option value="2001">2001</option>
+              <option value="2002">2002</option>
+              <option value="2003">2003</option>
+              <option value="2004">2004</option>
+              <option value="2005">2005</option>
+              <option value="2006">2006</option>
+              <option value="2007">2007</option>
+              <option value="2008">2008</option>
+              <option value="2009">2009</option>
+              <option value="2010">2010</option>
+            </select>
+            <select name="birth-month" id="birth-month" required>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+            <select name="birth-day" id="birth-day" required>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </li>
+          <li>
+            <h3>性別<span class="required">※</span></h3>
+            <ul>
+              <li> <input type="radio" name="gender" id="male" required>
+                <label for="male">男性</label>
+              </li>
+              <li> <input type="radio" name="gender" id="female">
+                <label for="female">女性</label>
+              </li>
+              <li> <input type="radio" name="gender" id="other">
+                <label for="other">その他</label>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <label for="work">職業</label>
+            <select name="" id="work">
+              <option value="">学生</option>
+              <option value="">会社員</option>
+              <option value="">主婦</option>
+              <option value="">その他</option>
+            </select>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>アカウント情報</legend>
+        <ul>
+          <li>
+            <label for="account-name">アカウント名<span class="required">※</span></label>
+            <input type="text" name="account-name" id="account-name" required>
+          </li>
+          <li>
+            <label for="mail-address">メールアドレス<span class="required">※</span></label>
+            <input type="email" name="mail-address" id="mail-address" required>
+          </li>
+          <li>
+            <label for="password">パスワード<span class="required">※</span></label>
+            <input type="password" name="password" id="password" required>
+          </li>
+          <li>
+            <label for="password-re">確認用パスワード<span class="required">※</span></label>
+            <input type="password" name="password-re" id="password-re" required>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>連絡先</legend>
+        <ul>
+          <li>
+            <label for="address">住所<span class="required">※</span></label>
+            <input type="text" name="address" id="address" required>
+          </li>
+          <li>
+            <label for="tel">電話番号<span class="required">※</span></label>
+            <input type="tel" name="tel" id="tel" required>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>購読情報</legend>
+        <ul>
+          <li>
+            <input type="checkbox" name="mail-magazine" id="mail-magazine">
+            <label for="mail-magazine">メールマガジン</label>
+          </li>
+          <li>
+            <input type="checkbox" name="coupon" id="coupon">
+            <label for="coupon">クーポン</label>
+          </li>
+        </ul>
+      </fieldset>
+      <p><button type="submit">アカウント作成</button></p>
+      <p>アカウントを作成することにより、<a href="#">利用規約</a>と<a href="#">プライバシーポリシー</a>に同意するものとします。</p>
+    </form>
+  </div>
+</body>
 </html>
