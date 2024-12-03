@@ -9,6 +9,7 @@ body {
 .wrapper {
   margin-inline: auto;
   width: 600px;
+  margin-bottom: 120px;
 }
 
 form {
