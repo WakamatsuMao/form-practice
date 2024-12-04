@@ -101,6 +101,57 @@ li {
   text-decoration: none;
 }
 
+.gender-wrapper {
+  display: flex;
+  margin-top: 6px;
+  gap: 16px;
+}
+
+.gender-component {
+  input[type="radio"] {
+    /* 既定のスタイルを無効化 */
+    appearance: none;
+  }
+  label {
+    padding: 3px;
+    /* ラジオボタン用の余白 */
+    padding-left: 20px;
+    /* position: absoluteのアンカー用 */
+    position: relative;
+    &::before {
+      /* ラジオボタンのスタイル */
+      content: "";
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background-color: #fbfbfb;
+      border: 1px solid #d9d9d9;
+      /* 丸くする */
+      border-radius: 50%;
+      /* 位置調整 */
+      top: 50%;
+      left: 0px;
+      /* 中央揃え */
+      transform: translateY(-50%);
+    }
+  }
+  input[type="radio"]:checked + label::after {
+    /* 選択中ラジオボタンのスタイル */
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #017cbf;
+    /* 丸くする */
+    border-radius: 50%;
+    /* 位置調整 */
+    top: 50%;
+    left: 4px;
+    /* 中央揃え */
+    transform: translateY(-50%);
+  }
+}
+
 .custom-checkbox {
   /* 規定のスタイルを無効化 */
   appearance: none;
