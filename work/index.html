@@ -73,12 +73,20 @@
           </li>
           <li>
             <h3 class="form-label">性別<span class="required-marker">※</span></h3>
-            <input type="radio" name="gender" id="male" required>
-            <label for="male" class="form-gender-label">男性</label>
-            <input type="radio" name="gender" id="female">
-            <label for="female" class="form-gender-label">女性</label>
-            <input type="radio" name="gender" id="other">
-            <label for="other" class="form-gender-label">その他</label>
+            <div class="gender-wrapper">
+              <div class="gender-component">
+                <input type="radio" name="gender" id="male" required>
+                <label for="male" class="form-gender-label">男性</label>
+              </div>
+              <div class="gender-component">
+                <input type="radio" name="gender" id="female">
+                <label for="female" class="form-gender-label">女性</label>
+              </div>
+              <div class="gender-component">
+                <input type="radio" name="gender" id="other">
+                <label for="other" class="form-gender-label">その他</label>
+              </div>
+            </div>
           </li>
           <li>
             <label for="work" class="form-label">職業</label>
