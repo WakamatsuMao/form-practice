@@ -101,6 +101,34 @@ li {
   text-decoration: none;
 }
 
+.select-wrapper {
+  margin-top: 6px;
+}
+
+.select-component {
+  /* flex用の幅指定 */
+  width: 100%;
+  /* position: absoluteのアンカー用 */
+  position: relative;
+  select {
+    /* 既定のスタイルを無効化 */
+    appearance: none;
+  }
+  &::after {
+    /* ドロップダウンボックスの下矢印のスタイル */
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    right: 10px;
+    top: 45%;
+    display: inline-block;
+    border-bottom: 2px solid #c3c3c3;
+    border-right: 2px solid #c3c3c3;
+    transform: rotate(45deg);
+  }
+}
+
 .gender-wrapper {
   display: flex;
   margin-top: 6px;
