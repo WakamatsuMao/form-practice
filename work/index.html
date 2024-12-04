@@ -10,21 +10,21 @@
 </head>
 <body>
   <div class="wrapper">
-    <h1>登録用フォーム</h1>
-    <form action="">
-      <h2>アカウント作成</h2>
-      <fieldset>
-        <legend>個人情報</legend>
+    <h1 class="page-title">登録用フォーム</h1>
+    <form class="form-main">
+      <h2 class="form-title">アカウント作成</h2>
+      <fieldset class="form-field">
+        <legend class="form-field-title">個人情報</legend>
         <ul>
-          <li>
+          <li class="form-component">
             <label for="family-name" class="form-label">名字<span class="required-marker">※</span></label>
             <input type="text" name="family-name" id="family-name" required class="form-textfield" autocomplete="family-name">
           </li>
-          <li>
+          <li class="form-component">
             <label for="given-name" class="form-label">名前<span class="required-marker">※</span></label>
             <input type="text" name="given-name" id="given-name" required class="form-textfield" autocomplete="given-name">
           </li>
-          <li>
+          <li class="form-component">
             <label for="birth-year" class="form-label">生年月日<span class="required-marker">※</span></label>
             <div class="select-wrapper is_flex">
               <div class="select-component">
@@ -77,7 +77,7 @@
               </div>
             </div>
           </li>
-          <li>
+          <li class="form-component">
             <h3 class="form-label">性別<span class="required-marker">※</span></h3>
             <div class="gender-wrapper">
               <div class="gender-component">
@@ -94,7 +94,7 @@
               </div>
             </div>
           </li>
-          <li>
+          <li class="form-component">
             <label for="work" class="form-label">職業</label>
             <div class="select-wrapper">
               <div class="select-component">
@@ -110,48 +110,48 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset>
-        <legend>アカウント情報</legend>
+      <fieldset class="form-field">
+        <legend class="form-field-title">アカウント情報</legend>
         <ul>
-          <li>
+          <li class="form-component">
             <label for="account-name" class="form-label">アカウント名<span class="required-marker">※</span></label>
             <input type="text" name="account-name" id="account-name" required class="form-textfield" autocomplete="username">
           </li>
-          <li>
+          <li class="form-component">
             <label for="mail-address" class="form-label">メールアドレス<span class="required-marker">※</span></label>
             <input type="email" name="mail-address" id="mail-address" required class="form-textfield" autocomplete="email">
           </li>
-          <li>
+          <li class="form-component">
             <label for="password" class="form-label">パスワード<span class="required-marker">※</span></label>
             <input type="password" name="password" id="password" required class="form-textfield" autocomplete="new-password">
           </li>
-          <li>
+          <li class="form-component">
             <label for="password-re" class="form-label">確認用パスワード<span class="required-marker">※</span></label>
             <input type="password" name="password-re" id="password-re" required class="form-textfield" autocomplete="new-password">
           </li>
         </ul>
       </fieldset>
-      <fieldset>
-        <legend>連絡先</legend>
+      <fieldset class="form-field">
+        <legend class="form-field-title">連絡先</legend>
         <ul>
-          <li>
+          <li class="form-component">
             <label for="address" class="form-label">住所<span class="required-marker">※</span></label>
             <input type="text" name="address" id="address" required class="form-textfield" autocomplete="street-address">
           </li>
-          <li>
+          <li class="form-component">
             <label for="tel" class="form-label">電話番号<span class="required-marker">※</span></label>
             <input type="tel" name="tel" id="tel" required class="form-textfield" autocomplete="tel">
           </li>
         </ul>
       </fieldset>
-      <fieldset>
-        <legend>購読情報</legend>
+      <fieldset class="form-field">
+        <legend class="form-field-title">購読情報</legend>
         <ul>
-          <li>
+          <li class="form-component">
             <input type="checkbox" name="mail-magazine" id="mail-magazine" class="custom-checkbox">
             <label for="mail-magazine" class="form-label">メールマガジン</label>
           </li>
-          <li>
+          <li class="form-component">
             <input type="checkbox" name="coupon" id="coupon" class="custom-checkbox">
             <label for="coupon" class="form-label">クーポン</label>
           </li>

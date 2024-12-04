@@ -12,32 +12,32 @@ body {
   margin-bottom: 120px;
 }
 
-form {
+.form-main {
   background-color: #ecfaff;
   padding: 50px;
 }
 
-h1 {
+.page-title {
   font-size: 28px;
   text-align: center;
   margin-block: 60px;
 }
 
-h2 {
+.form-title {
   font-size: 24px;
   text-align: center;
 }
 
-fieldset {
+.form-field {
   margin-top: 50px;
 }
 
-legend {
+.form-field-title {
   font-size: 18px;
   color: #000000;
 }
 
-li {
+.form-component {
   margin-top: 25px;
 }
 
