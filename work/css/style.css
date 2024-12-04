@@ -100,3 +100,41 @@ li {
   color: #0170bf;
   text-decoration: none;
 }
+
+.custom-checkbox {
+  /* 規定のスタイルを無効化 */
+  appearance: none;
+  /* position: absoluteのアンカー用 */
+  position: relative;
+  &::before {
+    /* チェックボックスのスタイル */
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #d9d9d9;
+    background-color: #ffffff;
+    /* 位置調整 */
+    top: 0;
+    left: 7px;
+    margin-top: -10px;
+  }
+  &:checked::after {
+    /* チェックマークのスタイル */
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 13px;
+    border-right: 3px solid #0140bf;
+    border-bottom: 3px solid #0140bf;
+    transform: rotate(45deg);
+    /* 位置調整 */
+    top: 0;
+    left: 13px;
+    margin-top: -13px;
+  }
+  + label {
+    /* ラベルとの間隔 */
+    margin-left: 25px;
+  }
+}
