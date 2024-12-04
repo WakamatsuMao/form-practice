@@ -132,7 +132,8 @@ li {
 .gender-wrapper {
   display: flex;
   margin-top: 6px;
-  gap: 16px;
+  padding-block: 3px;
+  gap: 14px;
 }
 
 .gender-component {
